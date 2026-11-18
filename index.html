@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Swapneel Das — Independent XAU/USD Trader & Market Analysis Portfolio</title>
+  
+  <!-- Primary SEO Meta Tags -->
+  <meta name="description" content="Official portfolio and trading profile of Swapneel Das, independent Forex trader specializing in XAU/USD (Gold). Driven by price action, technical discipline, and risk management.">
+  <meta name="keywords" content="Swapneel Das, Gold Trader, XAUUSD Trader, Forex Trading, Price Action Trading, Technical Analysis, MetaTrader 5, TradingView">
+  <meta name="author" content="Swapneel Das">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://swapneeldas.com/">
+
+  <!-- Favicon Icons (Using Profile Photo) -->
+  <link rel="icon" type="image/jpeg" href="https://lh3.googleusercontent.com/d/1bFpcYxI_u_55ko3k22mgOpYR40Xy0b2R">
+  <link rel="apple-touch-icon" href="https://lh3.googleusercontent.com/d/1bFpcYxI_u_55ko3k22mgOpYR40Xy0b2R">
+
+  <!-- Open Graph / Facebook / LinkedIn SEO -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://swapneeldas.com/">
+  <meta property="og:title" content="Swapneel Das — Independent XAU/USD Trader">
+  <meta property="og:description" content="Independent Forex trader specializing in XAU/USD (Gold). Driven by technical analysis, price action, and disciplined execution.">
+  <meta property="og:image" content="https://swapneeldas.com/og-image.jpg">
+
+  <!-- Twitter Card SEO -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://swapneeldas.com/">
+  <meta name="twitter:title" content="Swapneel Das — Independent XAU/USD Trader">
+  <meta name="twitter:description" content="Independent Forex trader specializing in XAU/USD (Gold). Focused on technical precision and capital preservation.">
+  <meta name="twitter:image" content="https://swapneeldas.com/og-image.jpg">
+
+  <!-- Structured JSON-LD Schema Data for Search Engines -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Swapneel Das",
+    "jobTitle": "Independent Forex Trader",
+    "description": "Independent Forex trader specializing in XAU/USD (Gold) technical analysis and market structure execution.",
+    "knowsAbout": ["Forex Trading", "XAU/USD", "Technical Analysis", "Price Action", "Risk Management"],
+    "sameAs": [
+      "https://instagram.com/swapneel_das",
+      "https://www.tradingview.com/u/etherealneel/",
+      "https://discord.gg/ytbmxHNF5W"
+    ]
+  }
+  </script>
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Manrope:wght@200..800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  
+  <!-- Lucide Icons Script -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f5f4f0;
+      --surface: #fffefa;
+      --surface-soft: #efeee8;
+      --text: #171815;
+      --muted: #777970;
+      --line: #e5e3dc;
+      --accent: #a8874e;
+      --accent-soft: #eee5d5;
+      --shadow: 0 18px 60px rgba(28, 27, 22, .055);
+      --gold: #d4af37;
+    }
+    :root[data-theme="dark"] {
+      color-scheme: dark;
+      --bg: #10110f;
+      --surface: #191a17;
+      --surface-soft: #22231f;
+      --text: #f2f0e9;
+      --muted: #a09f95;
+      --line: #30312b;
+      --accent: #c6a66c;
+      --accent-soft: #332c20;
+      --shadow: 0 18px 60px rgba(0, 0, 0, .2);
+      --gold: #e5c158;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: "DM Sans", sans-serif;
+      -webkit-font-smoothing: antialiased;
+      transition: background .25s ease, color .25s ease;
+    }
+    a { color: inherit; text-decoration: none; }
+    button { font: inherit; background: none; border: none; padding: 0; cursor: pointer; }
+    
+    .page-shell { width: 100%; padding: 0 48px; margin: 0 auto; box-sizing: border-box; }
+    
+    /* Topbar Navigation */
+    .topbar { 
+      height: 88px; 
+      display: flex; 
+      align-items: center; 
+      justify-content: space-between; 
+      border-bottom: 1px solid var(--line); 
+    }
+    .wordmark { 
+      display: inline-flex; 
+      align-items: center; 
+      gap: 11px; 
+      font: 800 11px "Manrope", sans-serif; 
+      letter-spacing: .19em; 
+      text-transform: uppercase;
+    }
+    .wordmark-mark { 
+      width: 33px; 
+      height: 33px; 
+      display: grid; 
+      place-items: center; 
+      border: 1px solid var(--accent); 
+      color: var(--accent); 
+      font: 700 16px "Manrope", sans-serif; 
+      position: relative; 
+    }
+    .wordmark-mark span { 
+      position: absolute; 
+      font-size: 8px; 
+      right: -5px; 
+      bottom: -4px; 
+      background: var(--bg); 
+      padding: 0 3px; 
+      font-weight: 800;
+    }
+    .theme-toggle { 
+      border: 1px solid var(--line); 
+      background: var(--surface); 
+      color: var(--text); 
+      border-radius: 50%; 
+      width: 39px; 
+      height: 39px; 
+      display: grid; 
+      place-items: center; 
+      cursor: pointer; 
+      transition: transform .2s, border-color .2s; 
+    }
+    .theme-toggle:hover { transform: rotate(12deg); border-color: var(--accent); }
+    .theme-toggle svg { width: 17px; height: 17px; fill: none; stroke: currentColor; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
+    .moon-icon { display: none; }
+    :root[data-theme="dark"] .sun-icon { display: none; }
+    :root[data-theme="dark"] .moon-icon { display: block; }
+    
+    main { padding: 40px 0 56px; }
+    
+    /* Main Hero Profile Card */
+    .profile-card { 
+      background: var(--surface); 
+      border: 1px solid var(--line); 
+      border-radius: 6px; 
+      overflow: hidden; 
+      box-shadow: var(--shadow); 
+    }
+    .cover-art { 
+      height: 210px; 
+      position: relative; 
+      overflow: hidden; 
+      background: #141512; 
+      color: #c6a66c; 
+    }
+    .cover-grid { 
+      position: absolute; 
+      inset: 0; 
+      opacity: .22; 
+      background-image: linear-gradient(rgba(198,166,108,.18) 1px, transparent 1px), linear-gradient(90deg, rgba(198,166,108,.18) 1px, transparent 1px); 
+      background-size: 38px 38px; 
+      mask-image: linear-gradient(90deg, transparent, #000 30%, #000 80%, transparent); 
+    }
+    .cover-art:after { 
+      content: ""; 
+      position: absolute; 
+      inset: 0; 
+      background: radial-gradient(ellipse at 75% 50%, rgba(168,135,78,.25), transparent 48%), linear-gradient(110deg, transparent 45%, rgba(255,255,255,.025)); 
+    }
+    .cover-orbit { 
+      position: absolute; 
+      border: 1px solid rgba(198,166,108,.28); 
+      border-radius: 50%; 
+      transform: rotate(-28deg); 
+      z-index: 1; 
+    }
+    .orbit-one { width: 450px; height: 160px; right: -45px; top: 18px; }
+    .orbit-two { width: 370px; height: 118px; right: -7px; top: 38px; }
+    
+    .cover-symbol { 
+      position: absolute; 
+      z-index: 2; 
+      right: 40px; 
+      top: 24px; 
+      font-size: 110px; 
+      line-height: 1; 
+      color: rgba(198,166,108,.72); 
+      text-shadow: 0 12px 50px rgba(198,166,108,.18); 
+      font-family: "Manrope", sans-serif;
+      font-weight: 800;
+    }
+    
+    .profile-content { padding: 0 34px 32px; position: relative; }
+    .avatar { 
+      margin-top: -45px; 
+      width: 90px; 
+      height: 90px; 
+      border: 4px solid var(--surface); 
+      background: #1e201b; 
+      color: #d2b47d; 
+      display: grid; 
+      place-items: center; 
+      position: relative; 
+      font: 800 38px "Manrope", sans-serif; 
+      z-index: 3; 
+      box-shadow: 0 6px 24px rgba(0,0,0,.15); 
+      border-radius: 4px;
+    }
+
+    .profile-heading { margin-top: 20px; }
+    .name-row { display: flex; align-items: center; gap: 10px; }
+    h1, h2, h3, p { margin: 0; }
+    h1 { 
+      font: 800 clamp(24px, 4.5vw, 32px) "Manrope", sans-serif; 
+      letter-spacing: .06em; 
+      text-transform: uppercase;
+    }
+    .verified { 
+      display: grid; 
+      place-items: center; 
+      width: 19px; 
+      height: 19px; 
+      border-radius: 50%; 
+      color: #fff; 
+      background: var(--accent); 
+      font-size: 10px; 
+      font-weight: 700; 
+    }
+    .handle { color: var(--muted); font-size: 13.5px; margin-top: 4px; font-weight: 500; }
+    .bio { 
+      max-width: 100%; 
+      margin-top: 20px; 
+      color: var(--text); 
+      font-size: 15px; 
+      line-height: 1.85; 
+      opacity: 0.9;
+    }
+    .profile-meta { 
+      display: flex; 
+      align-items: center; 
+      flex-wrap: wrap; 
+      gap: 14px; 
+      margin-top: 24px; 
+      color: var(--muted); 
+      font-size: 11.5px; 
+      letter-spacing: .03em; 
+      font-weight: 500;
+    }
+    .profile-meta > span { display: inline-flex; align-items: center; gap: 6px; }
+
+    /* Common Section Styling */
+    .links-section { margin-top: 55px; }
+    .section-heading { 
+      display: flex; 
+      align-items: flex-end; 
+      justify-content: space-between; 
+      margin-bottom: 20px; 
+    }
+    .eyebrow { 
+      font: 700 9.5px "Manrope", sans-serif; 
+      letter-spacing: .22em; 
+      color: var(--accent); 
+      text-transform: uppercase;
+    }
+    h2 { 
+      margin-top: 6px; 
+      font: 700 24px "Manrope", sans-serif; 
+      letter-spacing: -.03em; 
+    }
+    h2 span { color: var(--accent); }
+
+    /* About Section Grid Card */
+    .about-card {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 4px;
+      padding: 28px;
+      line-height: 1.85;
+      font-size: 14.5px;
+      color: var(--text);
+    }
+    .about-card p {
+      margin-bottom: 16px;
+      opacity: 0.92;
+    }
+    .about-card p:last-child {
+      margin-bottom: 0;
+    }
+    .about-highlights {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 16px;
+      margin-top: 24px;
+      padding-top: 24px;
+      border-top: 1px solid var(--line);
+    }
+    .highlight-item {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+    .highlight-label {
+      font: 700 10px "Manrope", sans-serif;
+      letter-spacing: .15em;
+      color: var(--accent);
+      text-transform: uppercase;
+    }
+    .highlight-val {
+      font-size: 13.5px;
+      font-weight: 600;
+    }
+
+    /* Workflow Cards */
+    .link-list { display: grid; gap: 11px; }
+    .link-card { 
+      min-height: 74px; 
+      display: flex; 
+      align-items: center; 
+      justify-content: space-between; 
+      gap: 18px; 
+      padding: 16px 22px; 
+      background: var(--surface); 
+      border: 1px solid var(--line); 
+      border-radius: 4px; 
+      transition: transform .2s ease, border-color .2s ease, background .2s ease; 
+      text-decoration: none;
+    }
+    a.link-card {
+      cursor: pointer;
+    }
+    a.link-card:hover { 
+      transform: translateY(-2px); 
+      border-color: var(--accent); 
+      background: var(--surface); 
+    }
+    .link-main { 
+      display: flex; 
+      align-items: center; 
+      gap: 16px; 
+      font: 600 14.5px "Manrope", sans-serif; 
+    }
+    .link-icon { 
+      width: 36px; 
+      height: 36px; 
+      flex: 0 0 36px;
+      display: grid; 
+      place-items: center; 
+      background: var(--surface-soft); 
+      color: var(--accent); 
+      border-radius: 4px; 
+      font-size: 14px; 
+    }
+    .link-info { display: flex; flex-direction: column; }
+    .link-sub { font-size: 11.5px; color: var(--muted); font-weight: 400; margin-top: 2px; }
+    .link-description { color: var(--muted); font-size: 11.5px; text-align: right; font-weight: 500; }
+    .link-arrow { color: var(--accent); font-size: 16px; margin-left: 10px; transition: transform .2s; }
+    a.link-card:hover .link-arrow { transform: translateX(3px); }
+
+    /* Note Card / Quote Callout */
+    .note-card { 
+      display: flex; 
+      gap: 18px; 
+      align-items: flex-start; 
+      margin-top: 44px; 
+      padding: 24px; 
+      background: var(--surface-soft); 
+      border: 1px solid var(--line); 
+      border-left: 3px solid var(--accent);
+      border-radius: 4px;
+    }
+    .note-icon { 
+      width: 32px; 
+      height: 32px; 
+      flex: 0 0 32px; 
+      display: grid; 
+      place-items: center; 
+      border: 1px solid var(--accent); 
+      color: var(--accent); 
+      border-radius: 3px;
+    }
+    .note-title { font: 700 13px "Manrope", sans-serif; color: var(--text); letter-spacing: .05em; text-transform: uppercase; }
+    .note-copy { color: var(--muted); font-size: 13px; line-height: 1.75; margin-top: 6px; max-width: 100%; }
+
+    /* Footer */
+    .footer { 
+      min-height: 85px; 
+      display: flex; 
+      justify-content: space-between; 
+      align-items: center; 
+      gap: 15px; 
+      border-top: 1px solid var(--line); 
+      color: var(--muted); 
+      font: 600 9px "Manrope", sans-serif; 
+      letter-spacing: .15em; 
+      text-transform: uppercase;
+      margin-top: 60px;
+    }
+    .footer a { color: var(--text); transition: color .2s; }
+    .footer a:hover { color: var(--accent); }
+
+    /* FAQ Section Accordion Styling */
+    .faq-list { display: grid; gap: 12px; }
+    .faq-item {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 4px;
+      overflow: hidden;
+      transition: border-color .2s ease;
+    }
+    .faq-item[open] {
+      border-color: var(--accent);
+    }
+    .faq-question {
+      padding: 18px 22px;
+      font: 600 15px "Manrope", sans-serif;
+      color: var(--text);
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      list-style: none;
+      user-select: none;
+    }
+    .faq-question::-webkit-details-marker {
+      display: none;
+    }
+    .faq-chevron {
+      color: var(--accent);
+      transition: transform 0.25s ease;
+      width: 18px;
+      height: 18px;
+      flex-shrink: 0;
+    }
+    .faq-item[open] .faq-chevron {
+      transform: rotate(180deg);
+    }
+    .faq-answer {
+      padding: 0 22px 20px 22px;
+      font-size: 14px;
+      line-height: 1.8;
+      color: var(--muted);
+      border-top: 1px dashed var(--line);
+      margin-top: 4px;
+      padding-top: 14px;
+    }
+
+    @media (max-width: 640px) {
+      .page-shell { width: 100%; padding: 0 18px; }
+      .topbar { height: 72px; }
+      main { padding: 24px 0 40px; }
+      .cover-art { height: 160px; }
+      .cover-symbol { right: 24px; top: 18px; font-size: 80px; }
+      .profile-content { padding: 0 20px 24px; }
+      .avatar { width: 76px; height: 76px; margin-top: -38px; font-size: 32px; }
+      .profile-meta { gap: 10px; font-size: 10.5px; }
+      .links-section { margin-top: 42px; }
+      h2 { font-size: 21px; }
+      .link-card { min-height: 68px; padding: 12px 16px; }
+      .link-description { font-size: 10px; text-align: left; }
+      .link-main { font-size: 13.5px; }
+      .note-card { padding: 18px; gap: 14px; }
+      .faq-question { padding: 14px 16px; font-size: 14px; }
+      .faq-answer { padding: 12px 16px 16px 16px; font-size: 13px; }
+      .footer { flex-direction: column; justify-content: center; text-align: center; gap: 10px; padding: 24px 0; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="page-shell">
+    
+    <!-- Top Header Bar -->
+    <header class="topbar">
+      <a href="#" class="wordmark" title="Swapneel Das Home">
+        <div class="wordmark-mark">
+          S<span>D</span>
+        </div>
+        SWAPNEEL DAS
+      </a>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle visual theme">
+        <i data-lucide="sun" class="sun-icon"></i>
+        <i data-lucide="moon" class="moon-icon"></i>
+      </button>
+    </header>
+
+    <main>
+      <!-- Hero Profile Section -->
+      <section class="profile-card">
+        <div class="cover-art">
+          <div class="cover-grid"></div>
+          <div class="cover-orbit orbit-one"></div>
+          <div class="cover-orbit orbit-two"></div>
+          <div class="cover-symbol">Au</div>
+        </div>
+        
+        <div class="profile-content">
+          <a href="#" class="avatar" title="Swapneel Das — Return to Top">
+            <img 
+              src="https://lh3.googleusercontent.com/d/1bFpcYxI_u_55ko3k22mgOpYR40Xy0b2R" 
+              alt="Swapneel Das" 
+              style="width: 100%; height: 100%; object-fit: cover; border-radius: 4px;"
+              onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"
+            />
+            <span class="fallback-avatar" style="display: none;">SD</span>
+          </a>
+
+          <div class="profile-heading">
+            <div class="name-row">
+              <h1>Swapneel Das</h1>
+              <span class="verified" title="Verified Trader Profile"><i data-lucide="check" style="width: 12px; height: 12px;"></i></span>
+            </div>
+            <div class="handle">Independent XAU/USD Trader & Technical Analyst</div>
+          </div>
+
+          <p class="bio">
+            Specializing exclusively in <strong>XAU/USD (Gold)</strong>. Focused on market structure, liquidity dynamics, systematic risk management, and long-term capital growth.
+          </p>
+
+          <div class="profile-meta">   
+            <span><i data-lucide="calendar" style="width: 13px; height: 13px;"></i> Journey Active Since May 2024</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Me Section -->
+      <section class="links-section">
+        <div class="section-heading">
+          <div>
+            <div class="eyebrow">Profile & Background</div>
+            <h2>About <span>Swapneel Das</span></h2>
+          </div>
+        </div>
+
+        <div class="about-card">
+          <p>
+            I am an independent market analyst and Forex trader primarily focused on navigating the <strong>XAU/USD (Gold)</strong> market. My trading methodology centers on interpreting raw price action, market structure transitions, and key liquidity levels across macro and intraday timeframes.
+          </p>
+          <p>
+            Rather than relying on mechanical indicators or high-frequency automated tools, my approach treats trading as a process of systematic probability management. Every trade decision is backed by a structured routine, disciplined risk parameters, and continuous session journaling.
+          </p>
+          
+          <div class="about-highlights">
+            <div class="highlight-item">
+              <span class="highlight-label">Primary Market</span>
+              <span class="highlight-val">XAU/USD (Spot Gold)</span>
+            </div>
+            <div class="highlight-item">
+              <span class="highlight-label">Trading Style</span>
+              <span class="highlight-val">Price Action & Market Structure</span>
+            </div>
+            <div class="highlight-item">
+              <span class="highlight-label">Core Objective</span>
+              <span class="highlight-val">Consistency & Capital Preservation</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Workflow & Toolset -->
+      <section class="links-section">
+        <div class="section-heading">
+          <div>
+            <div class="eyebrow">Execution Protocol</div>
+            <h2>Workflow & <span>Trading Toolkit</span></h2>
+          </div>
+        </div>
+
+        <div class="link-list">
+          <div class="link-card">
+            <div class="link-main">
+              <div class="link-icon"><i data-lucide="clock"></i></div>
+              <div class="link-info">
+                <div>London & New York Sessions</div>
+                <div class="link-sub">Active Trading Windows: London & New York Overlaps</div>
+              </div>
+            </div>
+            <div class="link-description">Trading Windows</div>
+          </div>
+
+          <a href="https://www.tradingview.com/chart/pWvbEBzw/" target="_blank" rel="noopener noreferrer" class="link-card">
+            <div class="link-main">
+              <div class="link-icon"><i data-lucide="bar-chart-2"></i></div>
+              <div class="link-info">
+                <div>TradingView Live Charting</div>
+                <div class="link-sub">Live Synced XAU/USD Multi-Timeframe Analysis & Key Levels</div>
+              </div>
+            </div>
+            <div style="display: flex; align-items: center;">
+              <div class="link-description">Live Charting</div>
+              <i data-lucide="arrow-up-right" class="link-arrow"></i>
+            </div>
+          </a>
+
+          <div class="link-card">
+            <div class="link-main">
+              <div class="link-icon"><i data-lucide="terminal"></i></div>
+              <div class="link-info">
+                <div>MetaTrader 5 Trade Execution</div>
+                <div class="link-sub">Calculated Orders, Precise Entry & Stop Placement</div>
+              </div>
+            </div>
+            <div class="link-description">Execution Environment</div>
+          </div>
+
+          <a href="https://swapneel.bro.bd/My-Journal/" target="_blank" rel="noopener noreferrer" class="link-card">
+            <div class="link-main">
+              <div class="link-icon"><i data-lucide="notebook-pen"></i></div>
+              <div class="link-info">
+                <div>My Trading Journal</div>
+                <div class="link-sub">Synced Daily Trade Logs, Case Studies & Performance Analytics</div>
+              </div>
+            </div>
+            <div style="display: flex; align-items: center;">
+              <div class="link-description">Live Journal</div>
+              <i data-lucide="arrow-up-right" class="link-arrow"></i>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <!-- Trading Philosophy & Rules -->
+      <section class="links-section">
+        <div class="section-heading">
+          <div>
+            <div class="eyebrow">Mindset & Blueprint</div>
+            <h2>Trading <span>Philosophy & Principles</span></h2>
+          </div>
+        </div>
+
+        <div class="link-list">
+          <div class="link-card">
+            <div class="link-main">
+              <div class="link-icon"><i data-lucide="shield-check"></i></div>
+              <div class="link-info">
+                <div>Risk Management & Capital Preservation</div>
+                <div class="link-sub">Predefined entry, stop-loss, take-profit, and controlled exposure on every trade.</div>
+              </div>
+            </div>
+            <div class="link-description">Pillar #1</div>
+          </div>
+
+          <div class="link-card">
+            <div class="link-main">
+              <div class="link-icon"><i data-lucide="user-check"></i></div>
+              <div class="link-info">
+                <div>Independent Market Analysis</div>
+                <div class="link-sub">Relying on personal chart reading with zero external signals or market noise.</div>
+              </div>
+            </div>
+            <div class="link-description">Pillar #2</div>
+          </div>
+
+          <div class="link-card">
+            <div class="link-main">
+              <div class="link-icon"><i data-lucide="notebook-pen"></i></div>
+              <div class="link-info">
+                <div>Journaling & Continuous Review</div>
+                <div class="link-sub">Documenting setups, evaluating errors, and reviewing session performance.</div>
+              </div>
+            </div>
+            <div class="link-description">Pillar #3</div>
+          </div>
+
+          <div class="link-card">
+            <div class="link-main">
+              <div class="link-icon"><i data-lucide="compass"></i></div>
+              <div class="link-info">
+                <div>Long-Term Vision & Discipline</div>
+                <div class="link-sub">Patience over impulse; building consistent profitability through strict discipline.</div>
+              </div>
+            </div>
+            <div class="link-description">Pillar #4</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Quote Callout Card -->
+      <div class="note-card">
+        <div class="note-icon">
+          <i data-lucide="quote" style="width: 16px; height: 16px;"></i>
+        </div>
+        <div>
+          <div class="note-title">Core Trading Ethos</div>
+          <div class="note-copy">
+            "I do not chase the market, force opportunities, or measure my abilities through a single winning or losing trade. I wait for favorable conditions, trust my analysis, respect my risk limits, and remain patient when there is no valid setup."
+          </div>
+        </div>
+      </div>
+
+    </main>
+
+    <!-- Official Links & Socials Section -->
+    <section class="links-section">
+      <div class="section-heading">
+        <div>
+          <div class="eyebrow">Connect & Follow</div>
+          <h2>Official <span>Social Links</span></h2>
+        </div>
+      </div>
+
+      <div class="link-list">
+        <a href="https://instagram.com/swapneel_das" target="_blank" rel="noopener noreferrer" class="link-card">
+          <div class="link-main">
+            <div class="link-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"/>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/>
+              </svg>
+            </div>
+            <div class="link-info">
+              <div>Instagram Profile</div>
+              <div class="link-sub">@swapneel_das · Trading Journey & Updates</div>
+            </div>
+          </div>
+          <div style="display: flex; align-items: center;">
+            <div class="link-description">Personal Journal</div>
+            <i data-lucide="arrow-up-right" class="link-arrow"></i>
+          </div>
+        </a>
+
+        <a href="https://www.tradingview.com/u/etherealneel/" target="_blank" rel="noopener noreferrer" class="link-card">
+          <div class="link-main">
+            <div class="link-icon"><i data-lucide="candlestick-chart"></i></div>
+            <div class="link-info">
+              <div>TradingView Profile</div>
+              <div class="link-sub">@etherealneel · Public XAU/USD Technical Analysis & Charts</div>
+            </div>
+          </div>
+          <div style="display: flex; align-items: center;">
+            <div class="link-description">Chart Analysis</div>
+            <i data-lucide="arrow-up-right" class="link-arrow"></i>
+          </div>
+        </a>
+
+        <a href="https://discord.gg/ytbmxHNF5W" target="_blank" rel="noopener noreferrer" class="link-card">
+          <div class="link-main">
+            <div class="link-icon"><i data-lucide="message-square"></i></div>
+            <div class="link-info">
+              <div>Discord Community</div>
+              <div class="link-sub">Market Observations & Trader Hub</div>
+            </div>
+          </div>
+          <div style="display: flex; align-items: center;">
+            <div class="link-description">Community</div>
+            <i data-lucide="arrow-up-right" class="link-arrow"></i>
+          </div>
+        </a>
+
+        <a href="mailto:etherealneel@gmail.com" class="link-card">
+          <div class="link-main">
+            <div class="link-icon"><i data-lucide="mail"></i></div>
+            <div class="link-info">
+              <div>Email Contact</div>
+              <div class="link-sub">etherealneel@gmail.com · Direct Inquiries & Contact</div>
+            </div>
+          </div>
+          <div style="display: flex; align-items: center;">
+            <div class="link-description">Direct Mail</div>
+            <i data-lucide="arrow-up-right" class="link-arrow"></i>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- Frequently Asked Questions (FAQ) Section -->
+    <section class="links-section">
+      <div class="section-heading">
+        <div>
+          <div class="eyebrow">Information</div>
+          <h2>Frequently Asked <span>Questions</span></h2>
+        </div>
+        <div class="link-count">05 Answers</div>
+      </div>
+
+      <div class="faq-list">
+        <details class="faq-item" open>
+          <summary class="faq-question">
+            <span>1. Who is Swapneel Das?</span>
+            <i data-lucide="chevron-down" class="faq-chevron"></i>
+          </summary>
+          <div class="faq-answer">
+            Swapneel Das is a student and independent Forex trader from Bangladesh. He is focused on personal growth, continuous learning, financial independence, and building a meaningful future.
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-question">
+            <span>2. What do you do professionally?</span>
+            <i data-lucide="chevron-down" class="faq-chevron"></i>
+          </summary>
+          <div class="faq-answer">
+            I am an independent Forex trader and market enthusiast. Alongside trading, I pursue my academic studies in English Literature and Language.
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-question">
+            <span>3. What are your main interests?</span>
+            <i data-lucide="chevron-down" class="faq-chevron"></i>
+          </summary>
+          <div class="faq-answer">
+            My interests include financial markets, technology, literature, personal development, and exploring new ideas. I value knowledge, independence, and continuous improvement.
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-question">
+            <span>4. What are your long-term goals?</span>
+            <i data-lucide="chevron-down" class="faq-chevron"></i>
+          </summary>
+          <div class="faq-answer">
+            My goal is to achieve financial independence, build something meaningful through my work, support my family, and create a life defined by freedom and purpose.
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-question">
+            <span>5. What is your personal philosophy?</span>
+            <i data-lucide="chevron-down" class="faq-chevron"></i>
+          </summary>
+          <div class="faq-answer">
+            I believe in working independently, staying disciplined, keeping my ambitions private, and letting results speak for themselves. I prefer consistent progress over temporary recognition.
+          </div>
+        </details>
+      </div>
+    </section>
+
+    <!-- Page Footer -->
+    <footer class="footer">
+      <div>SWAPNEEL DAS © <span id="year">2026</span></div>
+      <div class="footer-center">TRADE · DISCIPLINE · FREEDOM</div>
+      <div><a href="#top">Back to top ↑</a></div>
+    </footer>
+
+  </div>
+
+  <script>
+    // Initialize Lucide Icons
+    lucide.createIcons();
+
+    // Dark / Light Theme Toggle Handler
+    const themeToggleBtn = document.getElementById('themeToggle');
+    const rootEl = document.documentElement;
+
+    // Check system preference or default to light
+    const savedTheme = localStorage.getItem('ethereal_theme') || 'light';
+    rootEl.setAttribute('data-theme', savedTheme);
+
+    themeToggleBtn.addEventListener('click', () => {
+      const currentTheme = rootEl.getAttribute('data-theme');
+      const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+      rootEl.setAttribute('data-theme', newTheme);
+      localStorage.setItem('ethereal_theme', newTheme);
+    });
+
+    // Dynamic Year Update
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
